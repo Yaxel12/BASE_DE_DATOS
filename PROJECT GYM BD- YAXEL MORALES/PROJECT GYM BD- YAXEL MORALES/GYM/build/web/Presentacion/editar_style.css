@@ -1,0 +1,281 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400);
+
+input::-webkit-input-placeholder {
+    color: #aca49c;
+    font-size: 0.875em;
+}
+
+input:focus::-webkit-input-placeholder {
+    color: #bbb5af;
+}
+
+input::-moz-placeholder {
+    color: #aca49c;
+    font-size: 0.875em;
+}
+
+input:focus::-moz-placeholder {
+    color: #bbb5af;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #aca49c;
+    font-size: 0.875em;
+}
+
+input:focus::placeholder {
+    color: #bbb5af;
+}
+
+input::-ms-placeholder, textarea::-ms-placeholder {
+    color: #aca49c;
+    font-size: 0.875em;
+}
+
+input:focus::-ms-placeholder {
+    color: #bbb5af;
+}
+
+
+input:hover::-webkit-input-placeholder {
+    color: #e2dedb;
+    font-size: 0.875em;
+}
+
+input:hover:focus::-webkit-input-placeholder {
+    color: #cbc6c1;
+}
+
+input:hover::-moz-placeholder {
+    color: #e2dedb;
+    font-size: 0.875em;
+}
+
+input:hover:focus::-moz-placeholder {
+    color: #cbc6c1;
+}
+
+input:hover::placeholder {
+    color: #e2dedb;
+    font-size: 0.875em;
+}
+
+input:hover:focus::placeholder {
+    color: #cbc6c1;
+}
+
+input:hover::placeholder {
+    color: #e2dedb;
+    font-size: 0.875em;
+}
+
+input:hover:focus::-ms-placeholder {
+    color: #cbc6c1;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background: #e2dedb;
+    color: #b3aca7;
+}
+
+header {
+    position: relative;
+    margin: 100px 0 25px 0;
+    font-size: 2.3em;
+    text-align: center;
+    letter-spacing: 7px;
+}
+
+form {
+    position: relative;
+    top: 10px ;
+}
+
+input {
+
+
+    font-family: 'Lato', sans-serif;
+    font-size: 0.875em;
+    width: 470px;
+    height: 50px;
+    padding: 0px 15px 0px 15px;
+
+    background: transparent;
+    outline: none;
+    color: #726659;
+
+
+    border: solid 1px #b3aca7;
+
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+}
+
+input:hover {
+    background: #b3aca7;
+    color: #e2dedb;
+}
+
+/***************** Configuracion del button selecter ************************/
+
+.radio_input[type="radio"] {
+    display: none;
+}
+
+
+label {
+    position: relative;
+    color: #b3aca7;
+    font-family: 'Google Sans Regular', sans-serif;
+    font-size: 20px;
+    top: 10px;
+    left: 100px;
+    border: 2px solid #b3aca7;
+    border-radius: 5px;
+    padding: 5px 50px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #b3aca7;
+    transition: all 0.3s ease-in-out;
+}
+
+input[type="radio"]:checked + label {
+    background-color: #b3aca7;
+    color: #e2dedb;
+}
+
+/******************* Configuracion de los sliders ************************/
+
+
+.slider-cont {
+    padding: 25px; /*Espacio ocupado por el objeto*/
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+}
+
+.slider {
+    position: relative;
+    width: 400px;
+    height: 20px;
+}
+
+/*Hasta donde se extiende la barra de progreso*/
+.slider input {
+    position: absolute;
+    left: 35px;
+    top: 0px;
+    width: 295px;
+    height: 20px;
+    -webkit-appearance: none;
+    background-color: transparent;
+    z-index: 99;
+    border: 0;
+    outline: none;
+    margin: 0;
+}
+
+.slider input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 22px;
+    height: 22px;
+    background-color: #aca49c;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/*Barra de progreso del slider*/
+.slider progress {
+    width: 285px;
+    height: 20px;
+    -webkit-appearance: none;
+    position: absolute;
+    top: 0;
+    left: 50px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.slider progress::-webkit-progress-bar {
+    background-color: #f0f0f0;
+}
+
+.slider progress::-webkit-progress-value {
+    background-color: #f0f0f0;
+}
+
+.sliderValue {
+    font-family: "Google Sans Regular";
+    width: 30px;
+    height: 20px;
+    margin-left: 25px;
+    text-align: center;
+}
+
+/******************* Configuracion de los select ************************/
+
+select {
+    position: relative;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 305px;
+    top: 10px;
+    left: 100px;
+    height: 50px;
+    padding: 0px 0px 0px 15px;
+    font-family: 'Google Sans Regular', sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: transparent;
+    color: #808080;
+    border: solid 1px #b3aca7;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 0 0 10px #b3aca7;
+    transition: all 0.3s ease-in-out;
+
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+select:hover {
+    border: 1px solid #726659;
+}
+
+select option {
+    background-color: #e2dedb; /*dasfsadf*/
+    font-weight: 400;
+    font-size: 15px;
+}
+
+
+
+/******************* Configuracion del submit ************************/
+
+
+#submit {
+    position: relative;
+    top: 50px;
+    left: 70px;
+    width: 502px;
+    padding: 0;
+    margin: 15px 0px 0px 0px;
+
+    font-family: 'Google Sans Regular', sans-serif;
+    font-size: 0.875em;
+    color: #b3aca7;
+
+    outline:none;
+    cursor: pointer;
+
+    border: solid 1px #b3aca7;
+}
+
+#submit:hover {
+
+}

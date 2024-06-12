@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #b3aca7;
+    color: #333;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #e2dedb;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Para limpiar el float */
+}
+
+.personal-info {
+    float: left; /* Hacer que el contenedor de información personal flote a la izquierda */
+    width: 50%; /* Usar la mitad del ancho del contenedor principal */
+}
+
+.weekly-routine {
+    float: right;
+width: 50%; /* Usar la mitad del ancho del contenedor principal */
+    
+}
+
+h1, h2, h3 {
+    color: #726659;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+li {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
